@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="Chrome(failed)">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="facebook.VerifyLogInAndCreateAccount">
+        <methods>
+          <include name="enterCredentialsAndHitLoginButton"/>
+          <include name="afterTestUsedToQuitBrowser"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="changePageLanguageToMarathi"/>
+          <include name="launchBrowser"/>
+          <include name="beforeTestUsedToLaunchBrowser"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- facebook.VerifyLogInAndCreateAccount -->
+      <class name="facebook.VerifyForgotPasswordAndMarathi">
+        <methods>
+          <include name="beforeClassUsedToWritecommonObjects"/>
+          <include name="afterMethod"/>
+          <include name="afterTestUsedToQuitBrowser"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTestUsedToLaunchBrowser"/>
+          <include name="enterCredentialsAndCreateAccount"/>
+        </methods>
+      </class> <!-- facebook.VerifyForgotPasswordAndMarathi -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
