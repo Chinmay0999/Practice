@@ -26,6 +26,7 @@ public class TestngSuitePractice1 {
 	public void testNew1()
 	{
 		System.out.println("testNew1");
+		System.out.println("fugujuy");
 	}
 	
 	@Test
